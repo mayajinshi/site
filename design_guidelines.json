@@ -1,0 +1,131 @@
+{
+  "theme": "light",
+  "archetype": "Pastel & Soft (Archetype 3) mixed with Organic & Earthy (Archetype 1)",
+  "design_philosophy": "A beautiful, dreamy, and highly editorial Bakery Management System inspired by Bloominstudio. Focuses on soft pastel palettes (cream, blush pink, sage, dusty lavender), elegant serif typography paired with clean sans-serif, generous whitespace, organic shapes, and fluid, high-end scroll animations. The UI should feel less like a rigid SaaS dashboard and more like an immersive, high-end bakery catalog that just happens to have management capabilities.",
+  "colors": {
+    "background": "#FAF8F5",
+    "surface": "#FFFFFF",
+    "primary": "#3A3532",
+    "primary_foreground": "#FAF8F5",
+    "secondary": "#F4EBE6",
+    "secondary_foreground": "#3A3532",
+    "accent_blush": "#E8C4C4",
+    "accent_sage": "#C4D4CD",
+    "accent_lavender": "#D6CDDF",
+    "accent_peach": "#F5D8C6",
+    "muted": "#F0EBE1",
+    "muted_foreground": "#7E756D",
+    "border": "#EAE4DC",
+    "text_main": "#2C2927",
+    "error": "#D98080",
+    "success": "#9FB9A9"
+  },
+  "typography": {
+    "font_families": {
+      "heading": "'Cormorant Garamond', serif",
+      "body": "'Outfit', sans-serif"
+    },
+    "hierarchy": {
+      "h1": "text-5xl md:text-6xl font-light tracking-tight text-[#2C2927]",
+      "h2": "text-3xl md:text-4xl font-normal tracking-tight text-[#2C2927]",
+      "h3": "text-2xl font-normal text-[#2C2927]",
+      "h4": "text-lg font-medium font-body tracking-wide text-[#3A3532]",
+      "body": "text-base font-light text-[#7E756D] leading-relaxed",
+      "overline": "text-xs font-semibold uppercase tracking-[0.2em] text-[#A39B93]"
+    }
+  },
+  "spacing_and_layout": {
+    "container_padding": "p-6 md:p-12 lg:p-16",
+    "gap_standard": "gap-8",
+    "gap_large": "gap-16",
+    "border_radius": {
+      "card": "rounded-3xl",
+      "button": "rounded-full",
+      "image": "rounded-2xl"
+    },
+    "shadows": {
+      "soft": "shadow-[0_20px_40px_-15px_rgba(232,196,196,0.3)]",
+      "hover": "shadow-[0_30px_60px_-15px_rgba(232,196,196,0.4)]"
+    }
+  },
+  "components": {
+    "navigation": {
+      "style": "glassmorphism",
+      "classes": "fixed top-0 w-full z-50 backdrop-blur-xl bg-[#FAF8F5]/80 border-b border-[#EAE4DC]/50 transition-all duration-300"
+    },
+    "buttons": {
+      "primary": "rounded-full bg-[#3A3532] text-[#FAF8F5] px-8 py-3 hover:bg-[#2C2927] transition-all duration-300 hover:scale-105",
+      "secondary": "rounded-full bg-[#F4EBE6] text-[#3A3532] px-8 py-3 hover:bg-[#E8C4C4] transition-all duration-300 hover:scale-105"
+    },
+    "cards": {
+      "base": "bg-white rounded-3xl p-8 border border-[#EAE4DC] shadow-[0_10px_40px_-20px_rgba(0,0,0,0.05)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(232,196,196,0.3)]"
+    },
+    "inputs": {
+      "base": "w-full bg-[#FAF8F5] border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#E8C4C4] text-[#3A3532] transition-shadow placeholder:text-[#A39B93]"
+    },
+    "toast": {
+      "style": "floating soft card",
+      "classes": "bg-white rounded-2xl border border-[#EAE4DC] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] p-4 text-[#3A3532]"
+    }
+  },
+  "animations": {
+    "scroll": "Use Lenis for buttery smooth momentum scrolling. Required for the Bloominstudio feel.",
+    "page_transition": {
+      "initial": { "opacity": 0, "y": 20 },
+      "animate": { "opacity": 1, "y": 0 },
+      "exit": { "opacity": 0, "y": -20 },
+      "transition": { "duration": 0.8, "ease": [0.22, 1, 0.36, 1] }
+    },
+    "stagger_children": {
+      "transition": { "staggerChildren": 0.1 }
+    },
+    "image_reveal": {
+      "initial": { "scale": 1.1, "opacity": 0 },
+      "whileInView": { "scale": 1, "opacity": 1 },
+      "transition": { "duration": 1.2, "ease": [0.22, 1, 0.36, 1] }
+    }
+  },
+  "media_and_assets": {
+    "hero_background": {
+      "url": "https://images.pexels.com/photos/880639/pexels-photo-880639.jpeg",
+      "description": "Dreamy soft peach pink background with bright sun, ideal for wallpapers.",
+      "usage": "Use as a full-bleed or large rounded container background for the hero section, with an overlay or gradient to ensure text readability."
+    },
+    "auth_image": {
+      "url": "https://images.unsplash.com/photo-1666453579043-fef25e9ce099?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwbWluaW1hbGlzdCUyMGNha2UlMjBzdGFuZHxlbnwwfHx8fDE3NzY2MDI5NTl8MA&ixlib=rb-4.1.0&q=85",
+      "description": "A white cake on a white pedestal, elegant and minimalist.",
+      "usage": "Use in the split-screen Google Sign-In page to represent the high-end bakery aesthetic."
+    },
+    "product_placeholders": [
+      {
+        "name": "Pastel Macarons",
+        "url": "https://images.unsplash.com/photo-1672518478295-0e684ead1483?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHxwYXN0ZWwlMjBiYWtlcnklMjBwYXN0cnklMjBjYWtlJTIwbWFjYXJvbnxlbnwwfHx8fDE3NzY2MDI5NDV8MA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "name": "Almond Croissant",
+        "url": "https://images.pexels.com/photos/4828370/pexels-photo-4828370.jpeg"
+      },
+      {
+        "name": "Floral Cake",
+        "url": "https://images.pexels.com/photos/28487961/pexels-photo-28487961.jpeg"
+      }
+    ],
+    "decorative_bg": {
+      "url": "https://images.pexels.com/photos/7130557/pexels-photo-7130557.jpeg",
+      "description": "Soft abstract gradient background in pink and yellow hues.",
+      "usage": "Use as a subtle blurred background texture behind order history or dashboard areas."
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install and configure Lenis for smooth scrolling.",
+    "Import Google Fonts: 'Cormorant Garamond' (weights 300, 400, 600) and 'Outfit' (weights 300, 400, 500).",
+    "Do NOT use standard Shadcn borders or hard corners. Override the radius variables to map to large values (e.g., 1.5rem for cards).",
+    "Use Framer Motion to wrap page sections for smooth fade and slide-up reveals on scroll. The site must feel cinematic and soft.",
+    "For the Orders page cart area, use a sticky sidebar layout if possible, displaying items gracefully with plenty of negative space.",
+    "Never use pure black text. Use the provided #2C2927 or #3A3532.",
+    "Add 'data-testid' attributes to all buttons, inputs, and major layout sections.",
+    "Implement Google Sign-In button using standard UI practices but style it to fit the elegant theme if using a custom wrapper.",
+    "Ensure the hero section text overlaps the background image beautifully, using a very light white/cream gradient overlay if contrast is needed.",
+    "Replace standard toast notification styles with the customized 'toast' styles defined above."
+  ]
+}
