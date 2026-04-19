@@ -15,7 +15,7 @@ from datetime import datetime, timezone, timedelta
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / ".env")
 
-MONGO_URL = "mongodb+srv://niksthetic:nikita%232007@cluster.mongodb.net/"
+MONGO_URL = "mongodb+srv://ciyumaomao:ciyumaomao@cluster0.ulqel49.mongodb.net/?appName=Cluster0"
 DB_NAME = "bakery_db"
 CORS_ORIGINS = os.getenv("CORS_ORIGINS", "*")
 
